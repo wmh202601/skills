@@ -1,6 +1,6 @@
 ---
 name: claw-camp-poster
-description: 为 Claw CAMP / ClawCAMP 设计和迭代招生传播用的 HTML 海报与宣传图。凡涉及 Claw CAMP 的视觉物料都应触发：包括首发海报、短图、长图、朋友圈传播图、招生宣传图、微信群转发图，以及对现有海报的任何迭代（改期次、改席位、改二维码、改渠道、改价格、改文案）。输出固定尺寸 9:16 首发海报（420×747px）或可滚动长图，严格遵循 Claw CAMP 品牌规范（橙色系、四色彩条、Google 配色辅助、白底卡片）。
+description: When user asks for posters, images, or promotional materials about Claw CAMP, use this skill. Covers: creating new 海报/宣传图/长图/宣传材料, modifying existing posters (席位/二维码/价格/日期/期次/文案 updates), and all Claw CAMP/ClawCAMP/claw camp recruitment graphics. Do not use for AI CAMP or other programs.
 ---
 
 # Claw CAMP 海报技能
