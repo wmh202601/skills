@@ -1,0 +1,42 @@
+{
+  "skill_name": "claw-camp-poster",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "帮我做一张 Claw CAMP 第1期的首发海报，时间是4月18-19日，深圳，已满8/12席，不含价格",
+      "expected_output": "一个符合品牌规范的 9:16 HTML 首发海报，固定尺寸 420×747px，含彩条/顶部导航/主标题/金句/chips/进度条/三列收获/数字行/prereqs/深色footer，不含价格，二维码用梦浩微信.jpg",
+      "assertions": [
+        {"name": "fixed-height-747", "check": "HTML 中存在 height: 747px 或 height:747px"},
+        {"name": "has-color-bar", "check": "存在四色渐变彩条（claw-orange/g-red/g-yellow/g-green）"},
+        {"name": "no-price-block", "check": "不含 price-new 或 price-old 或 ¥ 字符"},
+        {"name": "computer-and-phone", "check": "包含'电脑和手机'或'电脑'字样（不只是'手机'）"},
+        {"name": "qr-height-auto", "check": "qr-img 使用 height: auto 而非固定像素高度"},
+        {"name": "correct-session", "check": "包含'第1期'或'第 1 期'"},
+        {"name": "correct-date", "check": "包含'4月18'或'4月18-19'"},
+        {"name": "output-in-clawcamp-dir", "check": "文件保存在 /Users/aicamp/Desktop/ClawCAMP/ 目录"}
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "把现有的 claw-camp-poster-v3.html 改一下，Jenny师姐说要换成她的二维码，其他不动",
+      "expected_output": "只修改 QR 图片路径为 Jenny 微信.jpg，其他内容完全不变",
+      "assertions": [
+        {"name": "jenny-qr-used", "check": "img src 包含 'Jenny 微信.jpg'"},
+        {"name": "no-other-changes", "check": "只修改了 src 属性，页面结构和文案保持不变"},
+        {"name": "no-aicamp-dir", "check": "未修改 aicamp_cc 目录下的任何文件"}
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "做一张 Claw CAMP 长图海报，第0期，3月14-15日深圳，含价格2980元，席位8/12",
+      "expected_output": "一张可滚动的长图 HTML，max-width 420px，包含痛点/价值/日程/导师/底部CTA含价格",
+      "assertions": [
+        {"name": "no-fixed-height", "check": "body 不设 height: 747px（长图不限高）"},
+        {"name": "has-price", "check": "包含 2980 或 ¥2980"},
+        {"name": "has-schedule", "check": "包含 DAY 1 或 Day 1 或日程相关内容"},
+        {"name": "computer-and-phone", "check": "包含'电脑和手机'字样"},
+        {"name": "correct-date", "check": "包含'3月14'"}
+      ]
+    }
+  ]
+}
