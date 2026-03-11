@@ -29,7 +29,7 @@ skills/
 <!-- 新增 skill 后在这里更新 -->
 | Skill | 描述 |
 |-------|------|
-| （待添加） | — |
+| [skill-creator](./skill-creator/) | 创建、测试、迭代和优化 Skills 的元技能 |
 
 ## 添加新技能
 
