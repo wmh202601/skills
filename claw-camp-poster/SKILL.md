@@ -1,6 +1,6 @@
 ---
 name: claw-camp-poster
-description: When user asks for posters, images, or promotional materials about Claw CAMP, use this skill. Covers: creating new 海报/宣传图/长图/宣传材料, modifying existing posters (席位/二维码/价格/日期/期次/文案 updates), and all Claw CAMP/ClawCAMP/claw camp recruitment graphics. Do not use for AI CAMP or other programs.
+description: "Trigger this skill for any Claw CAMP graphic task — creating or editing 招生海报, 长图, 宣传图, or 宣传材料. Applies to: new poster builds, seat count updates (席位), QR code swaps (二维码), date/price/copy changes, and channel variants. All spellings covered: Claw CAMP, claw camp, clawcamp. Do not trigger for AI CAMP or non-visual work (articles, outlines, course syllabi)."
 ---
 
 # Claw CAMP 海报技能
